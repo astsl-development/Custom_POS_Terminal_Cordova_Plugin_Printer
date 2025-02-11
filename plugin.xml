@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="custom_printer" version="0.1.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>custom_printer</name>
+    <js-module name="custom_printer" src="www/custom_printer.js">
+        <clobbers target="cordova.plugins.custom_printer" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="custom_printer">
+                <param name="android-package" value="custom_printer.custom_printer" />
+            </feature></config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/custom_printer.java" target-dir="src/custom_printer/custom_printer" />
+    </platform>
+</plugin>
