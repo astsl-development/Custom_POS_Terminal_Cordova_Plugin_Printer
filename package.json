@@ -1,5 +1,5 @@
 {
-  "name": "custom_printer",
+  "name": "@darkbearsam/custom_printer",
   "version": "0.1.1",
   "description": "Custom Cordova Printer Plugin for new terminals",
   "cordova": {
@@ -10,5 +10,20 @@
     "ecosystem:cordova"
   ],
   "author": "Alliance Dev",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astsl-development/Custom_POS_Terminal_Cordova_Plugin_Printer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/astsl-development/Custom_POS_Terminal_Cordova_Plugin_Printer/issues"
+  },
+  "homepage": "https://github.com/astsl-development/Custom_POS_Terminal_Cordova_Plugin_Printer#readme",
+  "dependencies": {
+    "@darkbearsam/custom_printer": "file:"
+  }
 }
