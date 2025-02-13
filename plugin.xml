@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="alliance-custom-printer-plugin" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="alliance-custom-printer-plugin" version="0.1.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Custom_Printer_Plugin</name>
     <js-module name="Custom_Printer_Plugin" src="www/Custom_Printer_Plugin.js">
         <clobbers target="cordova.plugins.Custom_Printer_Plugin" />
@@ -12,9 +12,7 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/Custom_Printer_Plugin.java" target-dir="src/alliance-custom-printer-plugin/Custom_Printer_Plugin" />
-
-        <source-file src="src/android/net/nyx/printerservice/print/IPrinterService.aidl" target-dir="src/alliance-custom-printer-plugin/Custom_Printer_Plugin/net/nyx/printerservice/print"/>
-        <source-file src="src/android/net/nyx/printerservice/print/PrintTextFormat.aidl" target-dir="src/alliance-custom-printer-plugin/Custom_Printer_Plugin/net/nyx/printerservice/print"/>
+        <source-file src="src/android/net/nyx/printerservice/print/IPrinterService.java" target-dir="src/alliance-custom-printer-plugin/Custom_Printer_Plugin/net/nyx/printerservice/print"/>        
         <source-file src="src/android/net/nyx/printerservice/print/PrintTextFormat.java" target-dir="src/alliance-custom-printer-plugin/Custom_Printer_Plugin/net/nyx/printerservice/print"/>
     </platform>
 </plugin>

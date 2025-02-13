@@ -1,6 +1,6 @@
 {
   "name": "@darkbearsam/custom_printer_plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom Cordova Plugin for new terminals",
   "main": "index.js",
   "scripts": {
